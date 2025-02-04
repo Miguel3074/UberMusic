@@ -10,14 +10,16 @@ export class SkipButtonComponent {
   token:any;
 
   constructor(private getTokenService: GetTokenService) {
-    this.initToken();
   }
 
   async initToken() {
-    this.token = await this.getTokenService.getToken();
+    this.token = this.getTokenService.getToken();
   }
   
   clickButton() {
+    if(!this.token){
+      this.initToken();
+    }
     skipMusic(this.token)
   }
 }

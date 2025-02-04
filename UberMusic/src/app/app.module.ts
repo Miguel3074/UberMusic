@@ -7,6 +7,7 @@ import { SkipButtonModule } from './components/skip-button/skip-button.module';
 import { HomeComponent } from './components/home/home.component';
 import { routes } from './app.routes';
 import { HomeModule } from './components/home/home.module';
+import { LoginButtonModule } from './components/login-button/login-button.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeModule } from './components/home/home.module';
     ReactiveFormsModule,
     SkipButtonModule,
     HomeModule,
+    LoginButtonModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

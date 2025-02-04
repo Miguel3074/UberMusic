@@ -10,11 +10,11 @@ export class HomeComponent {
   token:any;
 
   constructor(private getTokenService: GetTokenService) {
-    this.initToken();
+    //this.initToken();
   }
 
   async initToken() {
-    this.token = await this.getTokenService.getToken();
+    this.token = this.getTokenService.getToken();
     this.getArtista();
   }
   async getArtista() {

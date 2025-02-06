@@ -21,7 +21,7 @@ export class CallbackComponent implements OnInit {
       const code = params['code'];
       if (code) {
         await this.getTokenService.fetchAccessToken(code);
-        this.router.navigate(['/']);
+        this.router.navigate(['/control-panel']);
       }
     });
   }

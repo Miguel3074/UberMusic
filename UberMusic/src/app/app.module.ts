@@ -4,10 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SkipButtonModule } from './components/skip-button/skip-button.module';
-import { HomeComponent } from './components/home/home.component';
 import { routes } from './app.routes';
 import { HomeModule } from './components/home/home.module';
 import { LoginButtonModule } from './components/login-button/login-button.module';
+import { ControlPanelModule } from './components/control-panel/control-panel.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { LoginButtonModule } from './components/login-button/login-button.module
     SkipButtonModule,
     HomeModule,
     LoginButtonModule,
+    ControlPanelModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

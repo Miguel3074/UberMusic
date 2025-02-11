@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetTokenService {
-  private clientId = '192ea2be67de443e80f44e13b594e274';
-  private clientSecret = '31af6bfeb3f649228b5cfa35b30c0b25';
-  private redirectUri = 'http://localhost:4200/callback';
   private scope = 'user-modify-playback-state';
+  private clientId = environment.spotifyClientId;
+  private clientSecret = environment.spotifyclientSecret;
+  private redirectUri = environment.spotifyRedirectUri;
 
   private accessToken: string | null = null;
 

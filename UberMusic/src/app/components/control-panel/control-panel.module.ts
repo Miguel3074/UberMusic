@@ -11,7 +11,7 @@ import { routes } from '../../app.routes';
   imports: [
     CommonModule,
     SkipButtonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   exports: [ControlPanelComponent],
   declarations: [ControlPanelComponent],
